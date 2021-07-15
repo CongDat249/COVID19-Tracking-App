@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Covid 19 Tracking App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <header>
+        <h3>COVID-19 Tracker</h3>
+        <!-- Country selector -->
+        <div class="countries">
+          <img src="https://disease.sh/assets/img/flags/af.png" alt="" class="flag">
+          <select name="country" id="countries" value="af">
+          </select>
+        </div>
+      </header>
+      <main>
+        <!-- Info boxs -->
+        <div class="info">
+          <div class="info-box info-box_cases">
+            <p class="box-title">Total Cases</p>
+            <div class="box-content">
+              <div class="today today_cases">0 </div>
+              <div class="total total_cases">0 total</div>
+            </div>
+          </div>
+          <div class="info-box info-box_recovered">
+            <p class="box-title">Recovered</p>
+            <div class="box-content">
+              <div class="today today_recovered">0 </div>
+              <div class="total total_recovered">0 total</div>
+            </div>
+          </div>
+          <div class="info-box info-box_deaths">
+            <p class="box-title">Deaths</p>
+            <div class="box-content">
+              <div class="today today_deaths">0</div>
+              <div class="total total_deaths">0 total</div>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="chart"></canvas>
+        </div>
+        <!-- Map -->
+      </main>
+    </section>
+    <aside>
+      <div>
+        <h3>Statistics in Continents</h3>
+        <div class="chart-container">
+          <canvas id="bar-chart"></canvas>
+        </div>
+        <div class="news">
+          <h5>WHAT IS CORONAVIRUS</h5>
+          <p>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</p>
+          <p>Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without
+            special treatment.</p>
+          <h5>HOW IT SPREADS</h5>
+          <p>The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person
+            coughs, sneezes,
+            or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.</p>
+          <p>You can be infected by breathing in the virus if you are within close proximity of someone who has
+            COVID-19, or by
+            touching a contaminated surface and then your eyes, nose or mouth.</p>
+        </div>
+    </aside>
+  </div>
+
+
+  <script src="utilities.js"></script>
+  <script src="countries.js"></script>
+  <script src="continent.js"></script>
+  <script src="world.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

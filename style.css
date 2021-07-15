@@ -1,0 +1,167 @@
+:root {
+  --red: #d9534f;
+  --green: #5cb85c;
+  --yellow: #f0ad4e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  font-family: Roboto, Arial;
+  background-color: #f4f4f4;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+section {
+  flex: 3;
+  min-width: 500px;
+  background-color: #f4f4f4;
+  padding: 0 30px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h3 {
+  font-size: 2rem;
+  color: var(--red);
+  font-weight: bolder;
+}
+
+.countries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.countries select {
+  width: 200px;
+  height: 50px;
+  padding-left: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  outline: none;
+}
+
+.countries img {
+  width: 45px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-box {
+  background-color: #fff;
+  height: 200px;
+  flex: 1;
+  min-width: 200px;
+  border-radius: 5px;
+  padding: 20px;
+  border-top: 10px solid #333;
+}
+
+.info-box_cases {
+  border-top: 10px solid var(--yellow);
+}
+
+.info-box_recovered {
+  border-top: 10px solid var(--green);
+}
+
+.info-box_deaths {
+  border-top: 10px solid var(--red);
+}
+
+.box-title, .total {
+  color: #666;
+}
+
+.box-title {
+  font-size: 1.2rem;
+}
+
+.today {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.chart-container {
+  margin: auto;
+  max-width: 100%;
+  min-width: 500px;
+}
+
+aside {
+  flex: 2;
+  min-width: 400px;
+  padding: 20px 10px;
+}
+
+aside h3 {
+  text-align: center;
+}
+
+aside table {
+  width: 100%;
+  border: 3px solid #333;
+  border-radius: 10px;
+}
+
+.world-recovered {
+  border-right: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.news {
+  width: 80%;
+  margin: auto;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: justify;
+}
+
+.news h5 {
+  line-height: 2;
+}
+
+.news hr {
+  color: #ddd;
+  font-size: 10px;
+  border-bottom: 1px solid #ddd;
+}
